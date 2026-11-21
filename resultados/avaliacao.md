@@ -10,13 +10,13 @@ A avaliação procura observar os pontos positivos, identificar possíveis incon
 
 Ao longo dos experimentos, o LLM demonstrou capacidade de reconhecer diferentes características comuns em tentativas de phishing, como:
 
-- Uso de urgência e pressão psicológica.
-- Solicitação indevida de credenciais.
-- Tentativas de obter dados pessoais e financeiros.
-- Personificação de departamentos e figuras de autoridade.
-- Direcionamento para links potencialmente suspeitos.
-- Utilização de anexos que podem conter macros maliciosas.
-- Uso de SMS e QR Codes como meios para aplicar fraudes.
+Uso de urgência e pressão psicológica.
+Solicitação indevida de credenciais.
+Tentativas de obter dados pessoais e financeiros.
+Personificação de departamentos e figuras de autoridade.
+Direcionamento para links potencialmente suspeitos.
+Utilização de anexos que podem conter macros maliciosas.
+Uso de SMS e QR Codes como meios para aplicar fraudes.
 
 O modelo também conseguiu reconhecer mensagens aparentemente legítimas. Isso ficou evidente quando não classificou automaticamente uma comunicação como phishing apenas por ela apresentar determinados elementos, como um link.
 
@@ -44,11 +44,11 @@ Esse comportamento indica que a ferramenta não considera apenas a presença de 
 
 As respostas também trouxeram orientações preventivas importantes, entre elas:
 
-- Conferir a autenticidade do remetente.
-- Utilizar canais oficiais de comunicação.
-- Não compartilhar senhas ou códigos de autenticação.
-- Comunicar possíveis incidentes à equipe de Segurança da Informação.
-- Confirmar solicitações financeiras antes de realizar pagamentos.
+Conferir a autenticidade do remetente.
+Utilizar canais oficiais de comunicação.
+Não compartilhar senhas ou códigos de autenticação.
+Comunicar possíveis incidentes à equipe de Segurança da Informação.
+Confirmar solicitações financeiras antes de realizar pagamentos.
 
 4. Limitações e inconsistências identificadas
 
@@ -80,11 +80,11 @@ Por esse motivo, é importante estabelecer critérios mais objetivos para orient
 
 As análises foram feitas com base no conteúdo textual apresentado pelo usuário. Durante os testes, não foram realizadas verificações técnicas reais de:
 
-- Autenticidade dos remetentes.
-- Reputação dos domínios.
-- Destino dos links.
-- Conteúdo dos anexos.
-- Destino dos QR Codes.
+Autenticidade dos remetentes.
+Reputação dos domínios.
+Destino dos links.
+Conteúdo dos anexos.
+Destino dos QR Codes.
 
 Assim, as classificações devem ser entendidas como análises preliminares. Elas não comprovam, por si só, que existe ou não uma ameaça.
 
