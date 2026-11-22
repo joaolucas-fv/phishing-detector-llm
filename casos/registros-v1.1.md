@@ -46,10 +46,27 @@ A mensagem informa ao destinatário que sua conta será bloqueada caso os dados 
 
 #### 🎯 Resultado
 
-| | Classificação | Nível de risco |
-|:--|:--|:--|
-| **Esperado** | Muito suspeito | Alto |
-| **Observado** | Muito suspeito | Médio ⚠️ |
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="20%" align="left">Avaliação</th>
+      <th align="center">Classificação</th>
+      <th align="center">Nível de risco</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Esperado</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Alto</td>
+    </tr>
+    <tr>
+      <td><b>Observado</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Médio ⚠️</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 🔍 Indicadores identificados
 
@@ -88,10 +105,27 @@ A mensagem, supostamente enviada pelo departamento de Tecnologia, solicita que o
 
 #### 🎯 Resultado
 
-| | Classificação | Nível de risco |
-|:--|:--|:--|
-| **Esperado** | Muito suspeito | Alto |
-| **Observado** | Muito suspeito | Alto ✅ |
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="20%" align="left">Avaliação</th>
+      <th align="center">Classificação</th>
+      <th align="center">Nível de risco</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Esperado</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Alto</td>
+    </tr>
+    <tr>
+      <td><b>Observado</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Alto ✅</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 🔍 Indicadores identificados
 
@@ -125,10 +159,27 @@ A mensagem informa aos funcionários sobre uma manutenção programada nos servi
 
 #### 🎯 Resultado
 
-| | Classificação | Nível de risco |
-|:--|:--|:--|
-| **Esperado** | Sem indícios claros | Baixo |
-| **Observado** | Sem indícios claros | Baixo ✅ |
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="20%" align="left">Avaliação</th>
+      <th align="center">Classificação</th>
+      <th align="center">Nível de risco</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Esperado</b></td>
+      <td align="center">Sem indícios claros</td>
+      <td align="center">Baixo</td>
+    </tr>
+    <tr>
+      <td><b>Observado</b></td>
+      <td align="center">Sem indícios claros</td>
+      <td align="center">Baixo ✅</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 🔍 Indicadores identificados
 
@@ -161,10 +212,27 @@ A mensagem apresenta um suposto comunicado do departamento de Recursos Humanos s
 
 #### 🎯 Resultado
 
-| | Classificação | Nível de risco |
-|:--|:--|:--|
-| **Esperado** | Muito suspeito | Alto |
-| **Observado** | Muito suspeito | Alto ✅ |
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="20%" align="left">Avaliação</th>
+      <th align="center">Classificação</th>
+      <th align="center">Nível de risco</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Esperado</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Alto</td>
+    </tr>
+    <tr>
+      <td><b>Observado</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Alto ✅</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 🔍 Indicadores identificados
 
@@ -197,10 +265,27 @@ Uma mensagem, assinada pela Diretoria da Meridional, solicita a alteração urge
 
 #### 🎯 Resultado
 
-| | Classificação | Nível de risco |
-|:--|:--|:--|
-| **Esperado** | Muito suspeito | Alto |
-| **Observado** | Muito suspeito | Alto ✅ |
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="20%" align="left">Avaliação</th>
+      <th align="center">Classificação</th>
+      <th align="center">Nível de risco</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Esperado</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Alto</td>
+    </tr>
+    <tr>
+      <td><b>Observado</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Alto ✅</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 🔍 Indicadores identificados
 
@@ -234,10 +319,27 @@ Uma mensagem SMS informa que existe uma taxa pendente para a liberação de uma 
 
 #### 🎯 Resultado
 
-| | Classificação | Nível de risco |
-|:--|:--|:--|
-| **Esperado** | Muito suspeito | Alto |
-| **Observado** | Muito suspeito | Médio ⚠️ |
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="20%" align="left">Avaliação</th>
+      <th align="center">Classificação</th>
+      <th align="center">Nível de risco</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Esperado</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Alto</td>
+    </tr>
+    <tr>
+      <td><b>Observado</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Médio ⚠️</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 🔍 Indicadores identificados
 
@@ -271,10 +373,27 @@ Uma comunicação fictícia informa que os funcionários devem realizar uma atua
 
 #### 🎯 Resultado
 
-| | Classificação | Nível de risco |
-|:--|:--|:--|
-| **Esperado** | Muito suspeito | Alto |
-| **Observado** | Muito suspeito | Médio ⚠️ |
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="20%" align="left">Avaliação</th>
+      <th align="center">Classificação</th>
+      <th align="center">Nível de risco</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Esperado</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Alto</td>
+    </tr>
+    <tr>
+      <td><b>Observado</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Médio ⚠️</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 🔍 Indicadores identificados
 
@@ -307,10 +426,27 @@ Uma mensagem supostamente enviada pela Diretoria solicita uma planilha contendo 
 
 #### 🎯 Resultado
 
-| | Classificação | Nível de risco |
-|:--|:--|:--|
-| **Esperado** | Muito suspeito | Alto |
-| **Observado** | Muito suspeito | Alto ✅ |
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="20%" align="left">Avaliação</th>
+      <th align="center">Classificação</th>
+      <th align="center">Nível de risco</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Esperado</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Alto</td>
+    </tr>
+    <tr>
+      <td><b>Observado</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Alto ✅</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 🔍 Indicadores identificados
 
@@ -347,10 +483,27 @@ A mensagem informa que a senha corporativa do destinatário precisa ser redefini
 
 #### 🎯 Resultado
 
-| | Classificação | Nível de risco |
-|:--|:--|:--|
-| **Esperado** | Muito suspeito | Alto |
-| **Observado** | Muito suspeito | Médio ⚠️ |
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="20%" align="left">Avaliação</th>
+      <th align="center">Classificação</th>
+      <th align="center">Nível de risco</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Esperado</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Alto</td>
+    </tr>
+    <tr>
+      <td><b>Observado</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Médio ⚠️</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 🔍 Indicadores identificados
 
@@ -363,61 +516,4 @@ A mensagem informa que a senha corporativa do destinatário precisa ser redefini
 
 #### 🛠️ Avaliação técnica
 
-O LLM identificou corretamente os principais indicadores de phishing, reconhecendo a possibilidade de utilização de uma página falsa para capturar credenciais corporativas.
-
-A resposta apresentou uma análise coerente ao orientar o usuário a não acessar o link e a utilizar os canais oficiais para verificar a necessidade de redefinição da senha.
-
-Entretanto, o modelo atribuiu risco médio, embora o resultado esperado fosse alto.
-
-Essa diferença demonstra que a versão 1.1 ainda apresenta limitações na avaliação da gravidade de situações que envolvem possíveis tentativas de roubo de credenciais.
-
----
-
-### 🧪 Teste 10 — Comunicado legítimo de calendário corporativo
-
-**🏷️ Tipo de ameaça:** Cenário legítimo utilizado como controle  
-**📌 Versão do prompt:** 1.1
-
-#### 📝 Descrição do cenário
-
-A mensagem informa sobre um evento ou compromisso interno da empresa e apresenta um link para acesso ao calendário corporativo, utilizando um subdomínio da organização. A comunicação não solicita credenciais, não apresenta ameaças e não estabelece prazos urgentes.
-
-#### 🎯 Resultado
-
-| | Classificação | Nível de risco |
-|:--|:--|:--|
-| **Esperado** | Sem indícios claros | Baixo |
-| **Observado** | Sem indícios claros | Baixo ✅ |
-
-#### 🔍 Indicadores identificados
-
-- Comunicação informativa.
-- Link associado ao domínio corporativo.
-- Ausência de solicitação de credenciais.
-- Ausência de anexos suspeitos.
-- Ausência de urgência ou ameaças.
-- Conteúdo compatível com uma comunicação interna.
-
-#### 🛠️ Avaliação técnica
-
-O LLM apresentou uma classificação coerente com o cenário, sem considerar automaticamente o link como malicioso.
-
-A versão 1.1 demonstrou melhor compreensão da relação entre domínio principal e subdomínio, reconhecendo que a presença de um subdomínio corporativo não constitui, por si só, um indicador de phishing.
-
-O modelo também deixou claro que não poderia confirmar a autenticidade do remetente ou do domínio apenas com as informações fornecidas.
-
-O resultado demonstra uma boa diferenciação entre mensagens suspeitas e comunicações que não apresentam indicadores claros de phishing.
-
----
-
-## 🏁 4. Considerações finais
-
-A segunda rodada de testes demonstrou melhorias na precisão técnica, na identificação de indicadores e no reconhecimento das limitações do modelo.
-
-Entre os principais avanços observados estão a interpretação mais adequada dos domínios, a diferenciação entre tipos de dados conforme a LGPD e a apresentação de recomendações mais completas.
-
-Entretanto, foram observadas divergências na classificação do nível de risco, especialmente nos testes 01, 06, 07 e 09.
-
-Os resultados reforçam que a utilização de LLMs em atividades de Segurança da Informação deve ser acompanhada de validação humana e não substitui ferramentas especializadas ou verificações técnicas.
-
-O projeto possui finalidade exclusivamente educacional e demonstra a importância da avaliação contínua de prompts para melhorar a qualidade das respostas geradas por modelos de linguagem.
+O LLM identificou corretamente os principais indicadores de phishing,
