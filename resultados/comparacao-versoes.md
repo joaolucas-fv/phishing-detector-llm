@@ -1,5 +1,8 @@
-Comparação entre as Versões: Phishing Detector com LLM
-1. Objetivo
+<h1 align="center">🔄 Comparação entre as Versões: Phishing Detector com LLM</h1>
+
+---
+
+## 🎯 1. Objetivo
 
 Este documento apresenta uma comparação entre as duas versões do prompt desenvolvido para o projeto Phishing Detector.
 
@@ -9,28 +12,30 @@ A primeira rodada utilizou o prompt versão 1.0, enquanto a segunda utilizou a v
 
 Os mesmos dez cenários serviram de referência para avaliar as mudanças na identificação de ameaças, na classificação de riscos, na precisão conceitual e no reconhecimento das limitações do modelo.
 
-2. Comparação geral dos resultados
+---
+
+## 📊 2. Comparação geral dos resultados
 
 As duas versões apresentaram resultados semelhantes na classificação geral das mensagens.
 
 Em ambas as rodadas:
 
-Oito mensagens foram classificadas como muito suspeitas.
-Duas mensagens foram classificadas como sem indícios claros de phishing.
+- Oito mensagens foram classificadas como muito suspeitas.
+- Duas mensagens foram classificadas como sem indícios claros de phishing.
 
 No entanto, foram observadas diferenças na atribuição dos níveis de risco.
 
-Versão 1.0:
+**Versão 1.0:**
 
-Sete mensagens receberam nível de risco alto.
-Uma mensagem recebeu nível de risco médio.
-Duas mensagens receberam nível de risco baixo.
+- Sete mensagens receberam nível de risco alto.
+- Uma mensagem recebeu nível de risco médio.
+- Duas mensagens receberam nível de risco baixo.
 
-Versão 1.1:
+**Versão 1.1:**
 
-Quatro mensagens receberam nível de risco alto.
-Quatro mensagens receberam nível de risco médio.
-Duas mensagens receberam nível de risco baixo.
+- Quatro mensagens receberam nível de risco alto.
+- Quatro mensagens receberam nível de risco médio.
+- Duas mensagens receberam nível de risco baixo.
 
 A principal diferença ocorreu na atribuição do nível de risco. A versão 1.1 classificou como risco médio três cenários anteriormente considerados de alto risco: falsa suspensão de conta, Smishing e Quishing.
 
@@ -38,18 +43,35 @@ No teste de falsa redefinição de senha, o risco médio foi mantido nas duas ve
 
 Essas diferenças mostram que a atualização das instruções influenciou a forma como o modelo avaliou a gravidade das situações apresentadas.
 
-3. Comparação dos resultados por cenário
-Teste 01 — Falsa suspensão de conta
+---
 
-Versão 1.0:
-Classificação: Muito suspeito.
-Nível de risco: Alto.
+## 🧪 3. Comparação dos resultados por cenário
 
-Versão 1.1:
-Classificação: Muito suspeito.
-Nível de risco: Médio.
+### Teste 01 — Falsa suspensão de conta
 
-Análise comparativa:
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="20%" align="left">Versão</th>
+      <th align="center">Classificação</th>
+      <th align="center">Nível de risco</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Versão 1.0</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Alto</td>
+    </tr>
+    <tr>
+      <td><b>Versão 1.1</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Médio ⚠️</td>
+    </tr>
+  </tbody>
+</table>
+
+#### 🔍 Análise comparativa
 
 As duas versões identificaram corretamente a ameaça de bloqueio da conta, o prazo reduzido e a pressão psicológica.
 
@@ -57,17 +79,33 @@ A versão 1.1 apresentou uma análise mais organizada e distinguiu melhor os ele
 
 No entanto, houve divergência no nível de risco, que passou de alto para médio.
 
-Teste 02 — Falso suporte de TI
+---
 
-Versão 1.0:
-Classificação: Muito suspeito.
-Nível de risco: Alto.
+### Teste 02 — Falso suporte de TI
 
-Versão 1.1:
-Classificação: Muito suspeito.
-Nível de risco: Alto.
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="20%" align="left">Versão</th>
+      <th align="center">Classificação</th>
+      <th align="center">Nível de risco</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Versão 1.0</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Alto</td>
+    </tr>
+    <tr>
+      <td><b>Versão 1.1</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Alto</td>
+    </tr>
+  </tbody>
+</table>
 
-Análise comparativa:
+#### 🔍 Análise comparativa
 
 As duas versões identificaram corretamente a tentativa de obtenção de senhas e de códigos de autenticação.
 
@@ -77,17 +115,33 @@ Na versão 1.1, essa interpretação foi corrigida. O modelo reconheceu a corres
 
 A versão 1.1 também apresentou uma explicação mais detalhada sobre os riscos relacionados à autenticação multifator (MFA).
 
-Teste 03 — Comunicação de manutenção programada
+---
 
-Versão 1.0:
-Classificação: Sem indícios claros.
-Nível de risco: Baixo.
+### Teste 03 — Comunicação de manutenção programada
 
-Versão 1.1:
-Classificação: Sem indícios claros.
-Nível de risco: Baixo.
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="20%" align="left">Versão</th>
+      <th align="center">Classificação</th>
+      <th align="center">Nível de risco</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Versão 1.0</b></td>
+      <td align="center">Sem indícios claros</td>
+      <td align="center">Baixo</td>
+    </tr>
+    <tr>
+      <td><b>Versão 1.1</b></td>
+      <td align="center">Sem indícios claros</td>
+      <td align="center">Baixo</td>
+    </tr>
+  </tbody>
+</table>
 
-Análise comparativa:
+#### 🔍 Análise comparativa
 
 As duas versões reconheceram adequadamente a comunicação como uma mensagem sem indícios claros de phishing.
 
@@ -95,35 +149,67 @@ A versão 1.1 apresentou maior detalhamento sobre os riscos residuais, sobre a p
 
 A classificação permaneceu consistente entre as duas versões.
 
-Teste 04 — Anexo com macros
+---
 
-Versão 1.0:
-Classificação: Muito suspeito.
-Nível de risco: Alto.
+### Teste 04 — Anexo com macros
 
-Versão 1.1:
-Classificação: Muito suspeito.
-Nível de risco: Alto.
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="20%" align="left">Versão</th>
+      <th align="center">Classificação</th>
+      <th align="center">Nível de risco</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Versão 1.0</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Alto</td>
+    </tr>
+    <tr>
+      <td><b>Versão 1.1</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Alto</td>
+    </tr>
+  </tbody>
+</table>
 
-Análise comparativa:
+#### 🔍 Análise comparativa
 
-As duas versões identificaram corretamente os riscos relacionados ao arquivo .xlsm e à solicitação para habilitar macros.
+As duas versões identificaram corretamente os riscos relacionados ao arquivo `.xlsm` e à solicitação para habilitar macros.
 
 A versão 1.1 apresentou uma explicação mais detalhada sobre os possíveis impactos da execução de macros, além de recomendações mais específicas para a análise e a preservação do arquivo.
 
 O modelo também demonstrou cautela ao não afirmar que a extensão do arquivo, isoladamente, comprova a presença de malware.
 
-Teste 05 — Business Email Compromise (BEC)
+---
 
-Versão 1.0:
-Classificação: Muito suspeito.
-Nível de risco: Alto.
+### Teste 05 — Business Email Compromise (BEC)
 
-Versão 1.1:
-Classificação: Muito suspeito.
-Nível de risco: Alto.
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="20%" align="left">Versão</th>
+      <th align="center">Classificação</th>
+      <th align="center">Nível de risco</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Versão 1.0</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Alto</td>
+    </tr>
+    <tr>
+      <td><b>Versão 1.1</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Alto</td>
+    </tr>
+  </tbody>
+</table>
 
-Análise comparativa:
+#### 🔍 Análise comparativa
 
 As duas versões identificaram corretamente os indicadores de fraude financeira, de alteração de dados bancários, de urgência e de pedido de sigilo.
 
@@ -131,17 +217,33 @@ A versão 1.1 apresentou recomendações mais completas, entre elas os procedime
 
 Desenvolveu ainda uma análise mais detalhada sobre a necessidade de validação independente e sobre os possíveis impactos financeiros e operacionais.
 
-Teste 06 — Smishing
+---
 
-Versão 1.0:
-Classificação: Muito suspeito.
-Nível de risco: Alto.
+### Teste 06 — Smishing
 
-Versão 1.1:
-Classificação: Muito suspeito.
-Nível de risco: Médio.
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="20%" align="left">Versão</th>
+      <th align="center">Classificação</th>
+      <th align="center">Nível de risco</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Versão 1.0</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Alto</td>
+    </tr>
+    <tr>
+      <td><b>Versão 1.1</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Médio ⚠️</td>
+    </tr>
+  </tbody>
+</table>
 
-Análise comparativa:
+#### 🔍 Análise comparativa
 
 As duas versões identificaram corretamente a falsa cobrança de entrega, a urgência e a ameaça de devolução da encomenda.
 
@@ -151,17 +253,33 @@ O modelo também reconheceu que o uso de HTTPS não comprova a legitimidade do e
 
 No entanto, houve divergência no nível de risco, que passou de alto para médio.
 
-Teste 07 — Quishing
+---
 
-Versão 1.0:
-Classificação: Muito suspeito.
-Nível de risco: Alto.
+### Teste 07 — Quishing
 
-Versão 1.1:
-Classificação: Muito suspeito.
-Nível de risco: Médio.
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="20%" align="left">Versão</th>
+      <th align="center">Classificação</th>
+      <th align="center">Nível de risco</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Versão 1.0</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Alto</td>
+    </tr>
+    <tr>
+      <td><b>Versão 1.1</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Médio ⚠️</td>
+    </tr>
+  </tbody>
+</table>
 
-Análise comparativa:
+#### 🔍 Análise comparativa
 
 As duas versões reconheceram o uso de QR Code como possível mecanismo de direcionamento para páginas fraudulentas.
 
@@ -171,17 +289,33 @@ Ampliou também as recomendações para situações em que o funcionário já ti
 
 A principal diferença foi a classificação do risco, que passou de alto para médio.
 
-Teste 08 — Spear Phishing e solicitação de dados dos colaboradores
+---
 
-Versão 1.0:
-Classificação: Muito suspeito.
-Nível de risco: Alto.
+### Teste 08 — Spear Phishing e solicitação de dados dos colaboradores
 
-Versão 1.1:
-Classificação: Muito suspeito.
-Nível de risco: Alto.
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="20%" align="left">Versão</th>
+      <th align="center">Classificação</th>
+      <th align="center">Nível de risco</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Versão 1.0</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Alto</td>
+    </tr>
+    <tr>
+      <td><b>Versão 1.1</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Alto</td>
+    </tr>
+  </tbody>
+</table>
 
-Análise comparativa:
+#### 🔍 Análise comparativa
 
 As duas versões identificaram corretamente a tentativa de obter informações pessoais e financeiras dos colaboradores, além do uso de autoridade, de urgência e de confidencialidade.
 
@@ -193,17 +327,33 @@ Na versão 1.1, essa imprecisão foi corrigida. O modelo passou a diferenciar da
 
 Essa mudança indica uma melhora na precisão conceitual após a inclusão de instruções específicas no prompt.
 
-Teste 09 — Falsa redefinição de senha
+---
 
-Versão 1.0:
-Classificação: Muito suspeito.
-Nível de risco: Médio.
+### Teste 09 — Falsa redefinição de senha
 
-Versão 1.1:
-Classificação: Muito suspeito.
-Nível de risco: Médio.
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="20%" align="left">Versão</th>
+      <th align="center">Classificação</th>
+      <th align="center">Nível de risco</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Versão 1.0</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Médio ⚠️</td>
+    </tr>
+    <tr>
+      <td><b>Versão 1.1</b></td>
+      <td align="center">Muito suspeito</td>
+      <td align="center">Médio ⚠️</td>
+    </tr>
+  </tbody>
+</table>
 
-Análise comparativa:
+#### 🔍 Análise comparativa
 
 As duas versões identificaram corretamente os indicadores de possível roubo de credenciais, entre eles a urgência, a ameaça de bloqueio e o direcionamento para um portal de redefinição.
 
@@ -213,17 +363,33 @@ No entanto, a divergência entre o nível de risco esperado, inicialmente defini
 
 Isso mostra que o aprimoramento do prompt não resolveu por completo a inconsistência na classificação de risco.
 
-Teste 10 — Comunicação corporativa com link informativo
+---
 
-Versão 1.0:
-Classificação: Sem indícios claros.
-Nível de risco: Baixo.
+### Teste 10 — Comunicação corporativa com link informativo
 
-Versão 1.1:
-Classificação: Sem indícios claros.
-Nível de risco: Baixo.
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="20%" align="left">Versão</th>
+      <th align="center">Classificação</th>
+      <th align="center">Nível de risco</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Versão 1.0</b></td>
+      <td align="center">Sem indícios claros</td>
+      <td align="center">Baixo</td>
+    </tr>
+    <tr>
+      <td><b>Versão 1.1</b></td>
+      <td align="center">Sem indícios claros</td>
+      <td align="center">Baixo</td>
+    </tr>
+  </tbody>
+</table>
 
-Análise comparativa:
+#### 🔍 Análise comparativa
 
 As duas versões reconheceram adequadamente a comunicação como uma mensagem sem indícios claros de phishing.
 
@@ -233,41 +399,45 @@ Identificou também riscos residuais e explicou que a correspondência entre os 
 
 A classificação permaneceu consistente entre as duas versões.
 
-4. Principais melhorias observadas na versão 1.1
+---
+
+## ✅ 4. Principais melhorias observadas na versão 1.1
 
 A comparação dos vinte experimentos permitiu identificar algumas melhorias relevantes.
 
-4.1 Melhor interpretação de domínios e links
+### 4.1 Melhor interpretação de domínios e links
 
 O modelo passou a diferenciar melhor a correspondência entre o domínio do remetente e o endereço apresentado na mensagem.
 
 Essa mudança foi observada principalmente nos testes 02, 09 e 10.
 
-4.2 Maior precisão conceitual
+### 4.2 Maior precisão conceitual
 
 A imprecisão relacionada à LGPD, identificada no teste 08, foi corrigida.
 
 O modelo passou a diferenciar corretamente dados pessoais, informações financeiras e dados pessoais sensíveis.
 
-4.3 Maior reconhecimento das limitações
+### 4.3 Maior reconhecimento das limitações
 
 A versão 1.1 apresentou explicações mais completas sobre as informações que não poderiam ser verificadas apenas pelo conteúdo textual.
 
 Entre os pontos observados estão a autenticidade dos remetentes, a propriedade dos domínios, o destino dos links e a análise técnica de anexos e QR Codes.
 
-4.4 Recomendações mais detalhadas
+### 4.4 Recomendações mais detalhadas
 
 As orientações de segurança ficaram mais específicas e passaram a incluir procedimentos de verificação independente, comunicação de incidentes e medidas iniciais de proteção de contas comprometidas.
 
-4.5 Ampliação do escopo de análise
+### 4.5 Ampliação do escopo de análise
 
 A versão 1.1 passou a contemplar formalmente diferentes canais de comunicação, entre eles e-mails, SMS, mensagens instantâneas, comunicados digitais e QR Codes.
 
-5. Limitações que permaneceram
+---
+
+## ⚠️ 5. Limitações que permaneceram
 
 Apesar das melhorias, a comparação também identificou aspectos que ainda precisam de aprimoramento.
 
-5.1 Inconsistência na classificação de risco
+### 5.1 Inconsistência na classificação de risco
 
 A versão 1.1 atribuiu nível de risco médio a três cenários que haviam recebido nível alto na primeira versão.
 
@@ -275,19 +445,21 @@ Além disso, manteve a classificação média no teste de falsa redefinição de
 
 Essas diferenças mostram que a classificação de risco ainda depende da interpretação do modelo e pode variar mesmo quando os indicadores de ameaça são semelhantes.
 
-5.2 Dependência da qualidade das informações
+### 5.2 Dependência da qualidade das informações
 
 O modelo continua dependendo das informações fornecidas pelo usuário.
 
 Quando faltam dados sobre remetentes, links, anexos ou procedimentos corporativos, a análise permanece limitada.
 
-5.3 Ausência de validação técnica automatizada
+### 5.3 Ausência de validação técnica automatizada
 
 As duas versões realizaram análises baseadas no conteúdo fornecido, sem integração com ferramentas especializadas para verificar domínios, links, anexos ou códigos QR.
 
 Portanto, as respostas não devem ser interpretadas como confirmações técnicas de segurança ou de comprometimento.
 
-6. Conclusão comparativa
+---
+
+## 🏁 6. Conclusão comparativa
 
 A comparação entre as versões 1.0 e 1.1 mostrou melhorias qualitativas na organização das análises, na interpretação de informações técnicas, na precisão conceitual e no reconhecimento das limitações do modelo.
 
@@ -299,4 +471,5 @@ Os experimentos reforçam que a qualidade das instruções influencia o comporta
 
 O desenvolvimento das duas versões permitiu compreender a importância da Engenharia de Prompt, da avaliação crítica das respostas e da validação humana em aplicações de Inteligência Artificial voltadas à Cibersegurança.
 
-Importante: esta comparação possui caráter exploratório e qualitativo. Os vinte experimentos não constituem uma validação estatística da eficácia do modelo, nem permitem afirmar que a versão 1.1 apresenta maior precisão geral na detecção de ataques reais.
+> [!IMPORTANT]
+> Esta comparação possui caráter exploratório e qualitativo. Os vinte experimentos não constituem uma validação estatística da eficácia do modelo, nem permitem afirmar que a versão 1.1 apresenta maior precisão geral na detecção de ataques reais.
