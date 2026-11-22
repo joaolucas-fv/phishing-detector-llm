@@ -1,3 +1,6 @@
+Centralizei as duas tabelas (cabeçalho e conteúdo) trocando `|---|---|` por `|:---:|:---:|`. Mantive todo o resto exatamente como você colou, inclusive o link da pasta `resultados`.
+
+````markdown
 # 🎣 Phishing Detector com LLM
 
 > Projeto educacional de Segurança da Informação que utiliza um Modelo de Linguagem de Grande Escala (LLM) para auxiliar na identificação e na análise preliminar de possíveis tentativas de phishing.
@@ -28,7 +31,7 @@ O modelo analisa as mensagens considerando indicadores como:
 Ao final, o modelo apresenta:
 
 | Saída | Descrição |
-|---|---|
+|:---:|:---:|
 | **Classificação** | Enquadramento da mensagem |
 | **Nível de risco** | Grau de risco estimado |
 | **Indicadores** | Sinais identificados na análise |
@@ -51,7 +54,7 @@ Foram elaborados **10 cenários fictícios** envolvendo diferentes situações d
 Os mesmos cenários foram utilizados para avaliar duas versões do prompt:
 
 | Versão | Descrição |
-|---|---|
+|:---:|:---:|
 | **1.0** | Prompt inicial |
 | **1.1** | Prompt revisado, com melhorias de escopo, critérios de classificação, precisão técnica e apresentação das limitações |
 
@@ -63,7 +66,7 @@ A comparação mostrou que a revisão do prompt trouxe melhorias na precisão t�
 
 Também foram observadas diferenças na classificação de risco entre algumas avaliações, o que mostra que o uso de LLMs exige validação e acompanhamento humano.
 
-Os resultados completos estão documentados na pasta [`resultados/`](./resultados).
+Os resultados completos estão documentados na pasta [resultados/](https://github.com/joaolucas-fv/phishing-detector-llm/blob/main/resultados).
 
 ## ⚠️ Limitações
 
@@ -92,3 +95,4 @@ Durante o desenvolvimento, foram explorados conceitos de:
 ## 🎓 Finalidade
 
 Este projeto foi desenvolvido como parte do meu processo de aprendizado em Segurança da Informação e Inteligência Artificial, com foco na construção de conhecimentos práticos e na documentação dos estudos.
+````
