@@ -47,8 +47,9 @@ Ao final, o modelo apresenta uma **classificação**, um **nível de risco**, os
 
 - 📂 `prompts`: versões dos prompts utilizados.
 - 📂 `casos`: registros dos cenários de teste.
-- 📂 `resultados`: avaliações individuais e comparação entre as versões e matriz com os 20 registros das versões 1.0 e 1.1.
+- 📂 `resultados`: avaliações individuais e comparação entre as versões.
 - 📂 `evidencias`: capturas de tela dos testes realizados.
+- 📂 `resultados/comparacao-testes.xlsx`: matriz com os 20 registros das versões 1.0 e 1.1..
 
 ---
 
