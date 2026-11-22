@@ -4,8 +4,6 @@
 
 **Análise preliminar de possíveis tentativas de phishing com apoio de um Modelo de Linguagem de Grande Escala**
 
-`Segurança da Informação` • `Engenharia de Prompt` • `Finalidade Educacional`
-
 </div>
 
 ---
@@ -14,7 +12,7 @@
 
 Projeto educacional de Segurança da Informação que utiliza um **Modelo de Linguagem de Grande Escala (LLM)** para auxiliar na identificação e na análise preliminar de possíveis tentativas de phishing.
 
-Ele foi desenvolvido para estudar como os LLMs podem apoiar a análise de mensagens suspeitas, identificar indicadores de risco e apresentar recomendações de segurança.
+Ele foi desenvolvido com o objetivo de estudar como os LLMs podem apoiar a análise de mensagens suspeitas, identificar indicadores de risco e apresentar recomendações de segurança.
 
 ---
 
@@ -30,32 +28,27 @@ Ele foi desenvolvido para estudar como os LLMs podem apoiar a análise de mensag
 
 ## ⚙️ Como funciona
 
-O projeto utiliza **mensagens fictícias** para simular diferentes situações de comunicação digital. O modelo analisa cada mensagem considerando os seguintes indicadores:
+O projeto utiliza **mensagens fictícias** para simular diferentes situações de comunicação digital.
 
-| 🔎 Indicador | 📋 O que é analisado |
-|:---:|:---:|
-| **Remetente e domínio** | Origem da mensagem e coerência do endereço |
-| **Conteúdo e contexto** | Se o texto faz sentido para a situação apresentada |
-| **Solicitações sensíveis** | Pedidos de senhas, códigos ou dados pessoais |
-| **Links e anexos** | Presença de links ou arquivos suspeitos |
-| **Urgência e pressão** | Urgência, ameaças e pressão psicológica |
-| **Personificação** | Tentativas de se passar por pessoas ou organizações |
+O modelo analisa as mensagens considerando indicadores como:
 
-Ao final, o modelo apresenta:
+- **Remetente e domínio**
+- **Conteúdo e contexto da mensagem**
+- **Solicitações de senhas, códigos ou dados pessoais**
+- **Links e anexos suspeitos**
+- **Urgência, ameaças e pressão psicológica**
+- **Tentativas de personificação de pessoas ou organizações**
 
-> 🏷️ **Classificação** &nbsp;•&nbsp; 🚦 **Nível de risco** &nbsp;•&nbsp; 🧩 **Indicadores identificados** &nbsp;•&nbsp; 🛡️ **Recomendações de segurança**
+Ao final, o modelo apresenta uma **classificação**, um **nível de risco**, os **indicadores identificados** e **recomendações de segurança**.
 
 ---
 
 ## 🗂️ Estrutura do projeto
 
-```text
-📦 phishing-detector-llm
- ┣ 📂 prompts      → versões dos prompts utilizados
- ┣ 📂 casos        → registros dos cenários de teste
- ┣ 📂 resultados   → avaliações individuais e comparação entre as versões
- ┗ 📂 evidencias   → capturas de tela dos testes realizados
-```
+- 📂 `prompts`: versões dos prompts utilizados.
+- 📂 `casos`: registros dos cenários de teste.
+- 📂 `resultados`: avaliações individuais e comparação entre as versões.
+- 📂 `evidencias`: capturas de tela dos testes realizados.
 
 ---
 
@@ -63,22 +56,22 @@ Ao final, o modelo apresenta:
 
 Foram elaborados **10 cenários fictícios** envolvendo diferentes situações de phishing, incluindo e-mails, SMS, mensagens com QR Code e tentativas de engenharia social.
 
-Os mesmos cenários foram usados para avaliar duas versões do prompt:
+Os mesmos cenários foram utilizados para avaliar duas versões do prompt:
 
-| 🏷️ Versão | 📄 Descrição | 🧪 Avaliações |
-|:---:|:---:|:---:|
-| **1.0** | Prompt inicial | 10 |
-| **1.1** | Prompt revisado, com melhorias de escopo, critérios de classificação, precisão técnica e apresentação das limitações | 10 |
-| **Total** | — | **20** |
+- **Versão 1.0:** prompt inicial.
+- **Versão 1.1:** prompt revisado, com melhorias de escopo, critérios de classificação, precisão técnica e apresentação das limitações.
+
+Ao todo, foram realizadas **20 avaliações**, sendo 10 para cada versão.
 
 ---
 
 ## 📊 Resultados
 
-- ✅ A revisão do prompt trouxe **melhorias na precisão técnica** das respostas e na **identificação das limitações** da análise.
-- 🔄 Também foram observadas **diferenças na classificação de risco** entre algumas avaliações, o que mostra que o uso de LLMs exige **validação e acompanhamento humano**.
+A comparação mostrou que a revisão do prompt trouxe melhorias na **precisão técnica** das respostas e na **identificação das limitações** da análise.
 
-📁 Os resultados completos estão documentados na pasta [`resultados/`](./resultados).
+Também foram observadas diferenças na classificação de risco entre algumas avaliações, o que mostra que o uso de LLMs exige **validação e acompanhamento humano**.
+
+Os resultados completos estão documentados na pasta [`resultados/`](./resultados).
 
 ---
 
@@ -87,21 +80,19 @@ Os mesmos cenários foram usados para avaliar duas versões do prompt:
 > [!WARNING]
 > Este projeto possui **finalidade exclusivamente educacional**.
 
-- A análise realizada pelo LLM é **preliminar** e não substitui ferramentas especializadas de segurança, verificações técnicas ou a avaliação humana.
-- O modelo pode apresentar **inconsistências, interpretações incorretas ou classificações inadequadas**.
-- Por isso, as respostas **não devem ser usadas como única fonte** para decisões de segurança.
+A análise realizada pelo LLM é preliminar e não substitui ferramentas especializadas de segurança, verificações técnicas ou a avaliação humana.
+
+O modelo pode apresentar inconsistências, interpretações incorretas ou classificações inadequadas. Por isso, suas respostas não devem ser usadas como única fonte para decisões de segurança.
 
 ---
 
 ## 🛠️ Tecnologias e ferramentas
 
-| 🧰 Ferramenta | 💡 Uso no projeto |
-|:---:|:---:|
-| **ChatGPT (LLM)** | Análise das mensagens fictícias |
-| **Engenharia de Prompt** | Criação e revisão das versões do prompt |
-| **GitHub** | Versionamento e publicação do projeto |
-| **Google Sheets** | Registro e comparação das avaliações |
-| **Markdown** | Documentação técnica |
+- ChatGPT (LLM)
+- Engenharia de Prompt
+- GitHub
+- Google Sheets
+- Markdown
 
 ---
 
