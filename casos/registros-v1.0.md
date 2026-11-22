@@ -36,7 +36,7 @@ A avaliação foi qualitativa e feita manualmente. Os resultados registrados cor
 A mensagem informa ao destinatário que sua conta será bloqueada caso os dados cadastrais não sejam atualizados em até 12 horas. Para isso, apresenta uma suposta situação de segurança e incentiva o usuário a acessar um link de atualização.
 
 | Resultado | Classificação | Nível de risco |
-|---|---|---|
+|---|:---:|:---:|
 | **Esperado** | Muito suspeito | Alto |
 | **Observado** | Muito suspeito | Alto |
 
@@ -66,7 +66,7 @@ A classificação foi considerada coerente com as características da mensagem.
 A mensagem, supostamente enviada pelo departamento de Tecnologia, solicita que os funcionários informem suas senhas corporativas e seus códigos de autenticação para a realização de uma atualização de segurança.
 
 | Resultado | Classificação | Nível de risco |
-|---|---|---|
+|---|:---:|:---:|
 | **Esperado** | Muito suspeito | Alto |
 | **Observado** | Muito suspeito | Alto |
 
@@ -97,7 +97,7 @@ Essa imprecisão mostra que o modelo pode interpretar de forma equivocada inform
 O comunicado informa aos colaboradores sobre uma manutenção programada nos sistemas internos da empresa, sem solicitar informações pessoais nem exigir qualquer ação por parte dos funcionários.
 
 | Resultado | Classificação | Nível de risco |
-|---|---|---|
+|---|:---:|:---:|
 | **Esperado** | Sem indícios claros | Baixo |
 | **Observado** | Sem indícios claros | Baixo |
 
@@ -127,7 +127,7 @@ O resultado indica que o modelo é capaz de evitar a classificação indevida de
 A mensagem, supostamente enviada pelo departamento de Recursos Humanos, informa sobre uma atualização da folha salarial e solicita que o funcionário abra um arquivo com extensão .xlsm e habilite a execução de macros.
 
 | Resultado | Classificação | Nível de risco |
-|---|---|---|
+|---|:---:|:---:|
 | **Esperado** | Muito suspeito | Alto |
 | **Observado** | Muito suspeito | Alto |
 
@@ -157,7 +157,7 @@ Como ponto positivo, não afirmou que o arquivo continha código malicioso, já 
 A mensagem, supostamente enviada pela diretoria, solicita a alteração dos dados bancários de um fornecedor e exige que o pagamento seja feito com urgência e sigilo.
 
 | Resultado | Classificação | Nível de risco |
-|---|---|---|
+|---|:---:|:---:|
 | **Esperado** | Muito suspeito | Alto |
 | **Observado** | Muito suspeito | Alto |
 
@@ -187,7 +187,7 @@ O modelo também demonstrou compreender como o uso de autoridade, urgência e co
 A mensagem de texto informa sobre uma suposta pendência na entrega de uma encomenda e exige o pagamento de uma taxa para evitar a devolução do pacote.
 
 | Resultado | Classificação | Nível de risco |
-|---|---|---|
+|---|:---:|:---:|
 | **Esperado** | Muito suspeito | Alto |
 | **Observado** | Muito suspeito | Alto |
 
@@ -218,7 +218,7 @@ Também apontou os possíveis riscos de fraude financeira, de roubo de dados pes
 O comunicado informa sobre uma suposta atualização do sistema de autenticação corporativa e solicita que os funcionários escaneiem um QR Code para validar suas contas.
 
 | Resultado | Classificação | Nível de risco |
-|---|---|---|
+|---|:---:|:---:|
 | **Esperado** | Muito suspeito | Alto |
 | **Observado** | Muito suspeito | Alto |
 
@@ -254,7 +254,7 @@ A mensagem, supostamente enviada pela diretoria, solicita uma planilha com nomes
 A comunicação estabelece um prazo para o envio das informações e pede que os canais habituais de validação não sejam utilizados.
 
 | Resultado | Classificação | Nível de risco |
-|---|---|---|
+|---|:---:|:---:|
 | **Esperado** | Muito suspeito | Alto |
 | **Observado** | Muito suspeito | Alto |
 
@@ -270,4 +270,109 @@ A comunicação estabelece um prazo para o envio das informações e pede que os
 
 **Avaliação técnica:**
 
-O LLM identificou corretamente os indicadores de
+O LLM identificou corretamente os indicadores de engenharia social e de possível Spear Phishing.
+
+Também reconheceu os riscos de exposição de informações pessoais, de fraude financeira, de roubo de identidade e de uso dos dados em ataques direcionados.
+
+Houve, porém, uma imprecisão conceitual: o modelo classificou CPF, salário e dados bancários como dados pessoais sensíveis. Essas informações podem ser dados pessoais, mas não integram automaticamente as categorias de dados pessoais sensíveis previstas no artigo 5º, inciso II, da LGPD.
+
+A classificação de risco alto foi considerada coerente com a natureza das informações solicitadas e com a tentativa de contornar os procedimentos internos de segurança.
+
+### ⚠️ Teste 09 — Falsa redefinição de senha
+
+**Tipo de ameaça:** Phishing para roubo de credenciais.
+**Empresa:** Meridional (fictícia).
+
+**Descrição do cenário:**
+
+A mensagem, supostamente enviada pela equipe de Segurança da Informação, informa que a senha corporativa expirará no mesmo dia e direciona o funcionário para um portal de redefinição.
+
+| Resultado | Classificação | Nível de risco |
+|---|:---:|:---:|
+| **Esperado** | Muito suspeito | Alto |
+| **Observado** | Muito suspeito | **Médio** ⚠️ |
+
+**Indicadores identificados:**
+
+- Urgência para a atualização da senha.
+- Ameaça de bloqueio do acesso.
+- Link para redefinição de senha.
+- Possível personificação da equipe de Segurança da Informação.
+- Remetente não verificado.
+
+**Avaliação técnica:**
+
+O LLM identificou corretamente os indicadores de phishing e os possíveis riscos de roubo de credenciais.
+
+Houve, contudo, divergência entre o nível de risco esperado e o apresentado. O modelo classificou o risco como médio, por considerar que não havia evidências que confirmassem a natureza maliciosa do link ou a falsificação do remetente.
+
+A diferença mostra que a classificação de risco pode variar conforme a interpretação do modelo e as informações disponíveis.
+
+O risco médio pode ser defensável em uma análise preliminar, mas o cenário ainda representa uma ameaça potencial importante para a segurança das contas corporativas.
+
+### ✅ Teste 10 — Comunicação corporativa com link informativo
+
+**Tipo de mensagem:** Comunicação corporativa aparentemente legítima.
+**Empresa:** Meridional (fictícia).
+
+**Descrição do cenário:**
+
+A mensagem, do departamento de Recursos Humanos, informa sobre a disponibilização de um calendário de feriados e de funcionamento interno e apresenta um link para consulta na intranet corporativa.
+
+| Resultado | Classificação | Nível de risco |
+|---|:---:|:---:|
+| **Esperado** | Sem indícios claros | Baixo |
+| **Observado** | Sem indícios claros | Baixo |
+
+**Indicadores identificados:**
+
+- Remetente aparentemente institucional, mas não autenticado.
+- Assunto informativo.
+- Ausência de pressão psicológica.
+- Ausência de ameaças.
+- Ausência de solicitação de credenciais.
+- Presença de link sem evidências suficientes de maliciosidade.
+- Orientação para o uso dos canais internos habituais.
+
+**Avaliação técnica:**
+
+O LLM diferenciou corretamente a presença de um link da existência de uma ameaça.
+
+Reconheceu que a aparência do endereço não comprova sua autenticidade e apresentou recomendações adequadas de verificação.
+
+O resultado indica que o modelo é capaz de evitar um falso positivo diante de uma comunicação aparentemente legítima.
+
+## 📊 Síntese dos resultados
+
+Ao final dos dez experimentos:
+
+| Resultado | Quantidade |
+|---|---|
+| Mensagens classificadas como **muito suspeitas** | 8 |
+| Mensagens classificadas como **sem indícios claros** de phishing | 2 |
+| Mensagens suspeitas com risco **alto** | 7 |
+| Mensagem suspeita com risco **médio** | 1 |
+| Mensagens sem indícios claros com risco **baixo** | 2 |
+
+Durante a avaliação, também foram identificadas três imprecisões relevantes:
+
+1. Interpretação incorreta de um link como externo no Teste 02.
+2. Classificação conceitual incorreta de dados pessoais como dados pessoais sensíveis no Teste 08.
+3. Divergência entre o nível de risco esperado e o observado no Teste 09.
+
+Esses resultados constituem uma avaliação exploratória e qualitativa, e não uma taxa estatística de precisão do modelo.
+
+## 💡 Considerações finais
+
+A primeira rodada de experimentos mostrou que um Modelo de Linguagem pode auxiliar na análise preliminar de mensagens suspeitas, identificando indicadores de phishing e diferentes técnicas de engenharia social.
+
+O protótipo conseguiu analisar situações envolvendo roubo de credenciais, anexos com macros, fraudes financeiras, mensagens SMS, QR Codes e solicitações indevidas de informações pessoais.
+
+Também foi capaz de reconhecer comunicações aparentemente legítimas sem classificá-las automaticamente como maliciosas.
+
+Por outro lado, os experimentos revelaram limitações na interpretação de informações técnicas, na precisão conceitual e na classificação de riscos.
+
+Essas observações serviram de base para o desenvolvimento da versão 1.1 do prompt, que busca aprimorar a consistência das análises, estabelecer critérios mais claros e explicitar as limitações do modelo.
+
+> [!IMPORTANT]
+> Todos os cenários são fictícios. Os resultados não representam uma validação estatística da eficácia do modelo, nem comprovam sua capacidade de detectar ataques reais.
