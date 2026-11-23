@@ -35,10 +35,10 @@ A avaliação foi qualitativa e feita manualmente, com a comparação dos result
 
 ## 🗂️ 3. Registros dos testes
 
-### 🧪 Teste 01 — Falsa suspensão de conta
+### Teste 01 — Falsa suspensão de conta
 
-**🏷️ Tipo de ameaça:** Phishing por urgência  
-**📌 Versão do prompt:** 1.1
+**Tipo de ameaça:** Phishing por urgência  
+** Versão do prompt:** 1.1
 
 #### 📝 Descrição do cenário
 
@@ -63,7 +63,7 @@ A mensagem informa ao destinatário que sua conta será bloqueada caso os dados 
     <tr>
       <td><b>Observado</b></td>
       <td align="center">Muito suspeito</td>
-      <td align="center">Médio ⚠️</td>
+      <td align="center">Médio </td>
     </tr>
   </tbody>
 </table>
@@ -96,14 +96,14 @@ O resultado indica uma análise mais detalhada, mas evidencia a necessidade de c
 
 ### 🧪 Teste 02 — Falso suporte de TI
 
-**🏷️ Tipo de ameaça:** Phishing para roubo de credenciais  
-**📌 Versão do prompt:** 1.1
+**Tipo de ameaça:** Phishing para roubo de credenciais  
+**Versão do prompt:** 1.1
 
-#### 📝 Descrição do cenário
+#### Descrição do cenário
 
 A mensagem, supostamente enviada pelo departamento de Tecnologia, solicita que os funcionários informem suas senhas corporativas e seus códigos de autenticação para uma atualização de segurança.
 
-#### 🎯 Resultado
+#### Resultado
 
 <table width="100%">
   <thead>
@@ -150,8 +150,8 @@ A resposta apresentou recomendações adequadas, como não compartilhar credenci
 
 ### 🧪 Teste 03 — Comunicado de manutenção
 
-**🏷️ Tipo de ameaça:** Cenário legítimo utilizado como controle  
-**📌 Versão do prompt:** 1.1
+**Tipo de ameaça:** Cenário legítimo utilizado como controle  
+**Versão do prompt:** 1.1
 
 #### 📝 Descrição do cenário
 
@@ -203,14 +203,14 @@ O resultado demonstra a importância de evitar falsos positivos durante a análi
 
 ### 🧪 Teste 04 — Falso comunicado do RH com anexo
 
-**🏷️ Tipo de ameaça:** Phishing com anexo potencialmente malicioso  
-**📌 Versão do prompt:** 1.1
+**Tipo de ameaça:** Phishing com anexo potencialmente malicioso  
+**Versão do prompt:** 1.1
 
 #### 📝 Descrição do cenário
 
 A mensagem apresenta um suposto comunicado do departamento de Recursos Humanos sobre informações salariais e disponibiliza um arquivo com extensão `.xlsm`, solicitando que o destinatário habilite macros para visualizar o conteúdo.
 
-#### 🎯 Resultado
+#### Resultado
 
 <table width="100%">
   <thead>
@@ -256,14 +256,14 @@ O resultado demonstra uma análise coerente e tecnicamente mais cuidadosa.
 
 ### 🧪 Teste 05 — Alteração fraudulenta de dados bancários
 
-**🏷️ Tipo de ameaça:** Business Email Compromise (BEC)  
-**📌 Versão do prompt:** 1.1
+**Tipo de ameaça:** Business Email Compromise (BEC)  
+**Versão do prompt:** 1.1
 
-#### 📝 Descrição do cenário
+#### Descrição do cenário
 
 Uma mensagem, assinada pela Diretoria da Meridional, solicita a alteração urgente dos dados bancários de um fornecedor. O destinatário é orientado a manter a solicitação em sigilo e realizar a alteração sem seguir o processo habitual de confirmação.
 
-#### 🎯 Resultado
+#### Resultado
 
 <table width="100%">
   <thead>
@@ -310,8 +310,8 @@ O cenário demonstra a capacidade do modelo de identificar características comu
 
 ### 🧪 Teste 06 — Falso SMS de entrega
 
-**🏷️ Tipo de ameaça:** Smishing  
-**📌 Versão do prompt:** 1.1
+**Tipo de ameaça:** Smishing  
+** Versão do prompt:** 1.1
 
 #### 📝 Descrição do cenário
 
@@ -364,8 +364,8 @@ A diferença demonstra que, mesmo com melhorias no prompt, a classificação de 
 
 ### 🧪 Teste 07 — Falso comunicado com QR Code
 
-**🏷️ Tipo de ameaça:** Quishing  
-**📌 Versão do prompt:** 1.1
+**Tipo de ameaça:** Quishing  
+**Versão do prompt:** 1.1
 
 #### 📝 Descrição do cenário
 
@@ -417,8 +417,8 @@ Assim como no teste 06, houve divergência no nível de risco em relação à ve
 
 ### 🧪 Teste 08 — Coleta indevida de dados por falsa solicitação da Diretoria
 
-**🏷️ Tipo de ameaça:** Spear phishing e engenharia social  
-**📌 Versão do prompt:** 1.1
+**Tipo de ameaça:** Spear phishing e engenharia social  
+**Versão do prompt:** 1.1
 
 #### 📝 Descrição do cenário
 
@@ -474,8 +474,8 @@ O resultado demonstra uma evolução importante na precisão técnica e conceitu
 
 ### 🧪 Teste 09 — Falso aviso de redefinição de senha
 
-**🏷️ Tipo de ameaça:** Phishing para roubo de credenciais  
-**📌 Versão do prompt:** 1.1
+**Tipo de ameaça:** Phishing para roubo de credenciais  
+**Versão do prompt:** 1.1
 
 #### 📝 Descrição do cenário
 
