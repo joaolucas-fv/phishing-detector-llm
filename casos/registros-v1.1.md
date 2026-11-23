@@ -40,11 +40,11 @@ A avaliação foi qualitativa e feita manualmente, com a comparação dos result
 **Tipo de ameaça:** Phishing por urgência  
 ** Versão do prompt:** 1.1
 
-#### 📝 Descrição do cenário
+#### Descrição do cenário
 
 A mensagem informa ao destinatário que sua conta será bloqueada caso os dados cadastrais não sejam atualizados em até 12 horas.
 
-#### 🎯 Resultado
+#### Resultado
 
 <table width="100%">
   <thead>
@@ -68,7 +68,7 @@ A mensagem informa ao destinatário que sua conta será bloqueada caso os dados 
   </tbody>
 </table>
 
-#### 🔍 Indicadores identificados
+#### Indicadores identificados
 
 - Ameaça de suspensão da conta.
 - Prazo de 12 horas para a atualização cadastral.
@@ -127,7 +127,7 @@ A mensagem, supostamente enviada pelo departamento de Tecnologia, solicita que o
   </tbody>
 </table>
 
-#### 🔍 Indicadores identificados
+#### Indicadores identificados
 
 - Solicitação de senha corporativa.
 - Solicitação de códigos de autenticação multifator.
@@ -136,7 +136,7 @@ A mensagem, supostamente enviada pelo departamento de Tecnologia, solicita que o
 - Link apresentado para validação.
 - Pressão para fornecer informações de acesso.
 
-#### 🛠️ Avaliação técnica
+#### Avaliação técnica
 
 O LLM identificou corretamente a tentativa de obtenção de credenciais e códigos de autenticação, classificando o cenário como muito suspeito e de alto risco.
 
@@ -153,11 +153,11 @@ A resposta apresentou recomendações adequadas, como não compartilhar credenci
 **Tipo de ameaça:** Cenário legítimo utilizado como controle  
 **Versão do prompt:** 1.1
 
-#### 📝 Descrição do cenário
+#### Descrição do cenário
 
 A mensagem informa aos funcionários sobre uma manutenção programada nos serviços internos da empresa. Não apresenta links, anexos ou solicitações de informações.
 
-#### 🎯 Resultado
+#### Resultado
 
 <table width="100%">
   <thead>
@@ -189,7 +189,7 @@ A mensagem informa aos funcionários sobre uma manutenção programada nos servi
 - Ausência de ameaças ou pressão psicológica.
 - Conteúdo compatível com um comunicado interno.
 
-#### 🛠️ Avaliação técnica
+####  Avaliação técnica
 
 O LLM apresentou uma classificação coerente com o cenário, sem identificar indevidamente uma tentativa de phishing.
 
@@ -206,7 +206,7 @@ O resultado demonstra a importância de evitar falsos positivos durante a análi
 **Tipo de ameaça:** Phishing com anexo potencialmente malicioso  
 **Versão do prompt:** 1.1
 
-#### 📝 Descrição do cenário
+#### Descrição do cenário
 
 A mensagem apresenta um suposto comunicado do departamento de Recursos Humanos sobre informações salariais e disponibiliza um arquivo com extensão `.xlsm`, solicitando que o destinatário habilite macros para visualizar o conteúdo.
 
@@ -234,7 +234,7 @@ A mensagem apresenta um suposto comunicado do departamento de Recursos Humanos s
   </tbody>
 </table>
 
-#### 🔍 Indicadores identificados
+#### Indicadores identificados
 
 - Suposta comunicação do departamento de RH.
 - Arquivo com extensão `.xlsm`.
@@ -242,7 +242,7 @@ A mensagem apresenta um suposto comunicado do departamento de Recursos Humanos s
 - Possibilidade de execução de conteúdo ativo.
 - Uso de informações salariais como chamariz.
 
-#### 🛠️ Avaliação técnica
+#### Avaliação técnica
 
 O LLM identificou corretamente os principais indicadores de risco relacionados ao anexo e à solicitação para habilitar macros.
 
@@ -287,7 +287,7 @@ Uma mensagem, assinada pela Diretoria da Meridional, solicita a alteração urge
   </tbody>
 </table>
 
-#### 🔍 Indicadores identificados
+#### Indicadores identificados
 
 - Solicitação de alteração de dados bancários.
 - Uso de autoridade hierárquica.
@@ -296,7 +296,7 @@ Uma mensagem, assinada pela Diretoria da Meridional, solicita a alteração urge
 - Tentativa de contornar procedimentos internos.
 - Ausência de confirmação independente da solicitação.
 
-#### 🛠️ Avaliação técnica
+#### Avaliação técnica
 
 O LLM identificou corretamente os indicadores de fraude associados ao cenário, especialmente a combinação de autoridade, urgência e solicitação de alteração bancária.
 
@@ -313,7 +313,7 @@ O cenário demonstra a capacidade do modelo de identificar características comu
 **Tipo de ameaça:** Smishing  
 ** Versão do prompt:** 1.1
 
-#### 📝 Descrição do cenário
+#### Descrição do cenário
 
 Uma mensagem SMS informa que existe uma taxa pendente para a liberação de uma entrega. O destinatário é pressionado a realizar o pagamento ainda no mesmo dia por meio de um link, sob ameaça de devolução do pacote.
 
@@ -341,7 +341,7 @@ Uma mensagem SMS informa que existe uma taxa pendente para a liberação de uma 
   </tbody>
 </table>
 
-#### 🔍 Indicadores identificados
+#### Indicadores identificados
 
 - Cobrança inesperada de taxa.
 - Prazo curto para pagamento.
@@ -350,7 +350,7 @@ Uma mensagem SMS informa que existe uma taxa pendente para a liberação de uma 
 - Ausência de informações suficientes para confirmar a transportadora ou a entrega.
 - Uso de urgência e pressão psicológica.
 
-#### 🛠️ Avaliação técnica
+#### Avaliação técnica
 
 O LLM identificou corretamente os principais indicadores de smishing, reconhecendo a tentativa de induzir o destinatário a realizar um pagamento por meio de um link.
 
@@ -367,7 +367,7 @@ A diferença demonstra que, mesmo com melhorias no prompt, a classificação de 
 **Tipo de ameaça:** Quishing  
 **Versão do prompt:** 1.1
 
-#### 📝 Descrição do cenário
+#### Descrição do cenário
 
 Uma comunicação fictícia informa que os funcionários devem realizar uma atualização de autenticação por meio de um QR Code, estabelecendo um prazo de 18 horas e ameaçando suspender o acesso à conta caso o procedimento não seja realizado.
 
@@ -395,7 +395,7 @@ Uma comunicação fictícia informa que os funcionários devem realizar uma atua
   </tbody>
 </table>
 
-#### 🔍 Indicadores identificados
+#### Indicadores identificados
 
 - Solicitação de autenticação por QR Code.
 - Prazo de 18 horas.
@@ -420,11 +420,11 @@ Assim como no teste 06, houve divergência no nível de risco em relação à ve
 **Tipo de ameaça:** Spear phishing e engenharia social  
 **Versão do prompt:** 1.1
 
-#### 📝 Descrição do cenário
+#### Descrição do cenário
 
 Uma mensagem supostamente enviada pela Diretoria solicita uma planilha contendo nomes, CPF, cargos, salários e dados bancários dos funcionários. A solicitação apresenta urgência, exige sigilo e orienta o destinatário a não utilizar os canais habituais de compartilhamento.
 
-#### 🎯 Resultado
+#### Resultado
 
 <table width="100%">
   <thead>
@@ -448,7 +448,7 @@ Uma mensagem supostamente enviada pela Diretoria solicita uma planilha contendo 
   </tbody>
 </table>
 
-#### 🔍 Indicadores identificados
+#### Indicadores identificados
 
 - Solicitação de grande volume de dados pessoais.
 - Solicitação de informações financeiras.
@@ -458,7 +458,7 @@ Uma mensagem supostamente enviada pela Diretoria solicita uma planilha contendo 
 - Tentativa de contornar procedimentos internos.
 - Ausência de confirmação independente da solicitação.
 
-#### 🛠️ Avaliação técnica
+#### Avaliação técnica
 
 O LLM identificou corretamente os indicadores de engenharia social e o risco associado ao compartilhamento indevido de informações dos funcionários.
 
@@ -477,11 +477,11 @@ O resultado demonstra uma evolução importante na precisão técnica e conceitu
 **Tipo de ameaça:** Phishing para roubo de credenciais  
 **Versão do prompt:** 1.1
 
-#### 📝 Descrição do cenário
+#### Descrição do cenário
 
 A mensagem informa que a senha corporativa do destinatário precisa ser redefinida e ameaça bloquear o acesso à conta caso o procedimento não seja realizado por meio do link apresentado.
 
-#### 🎯 Resultado
+#### Resultado
 
 <table width="100%">
   <thead>
@@ -505,7 +505,7 @@ A mensagem informa que a senha corporativa do destinatário precisa ser redefini
   </tbody>
 </table>
 
-#### 🔍 Indicadores identificados
+#### Indicadores identificados
 
 - Solicitação de redefinição de senha.
 - Ameaça de bloqueio da conta.
@@ -514,6 +514,6 @@ A mensagem informa que a senha corporativa do destinatário precisa ser redefini
 - Possibilidade de captura de credenciais.
 - Ausência de confirmação da legitimidade da página apresentada.
 
-#### 🛠️ Avaliação técnica
+#### Avaliação técnica
 
 O LLM identificou corretamente os principais indicadores de phishing,
