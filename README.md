@@ -18,11 +18,11 @@ Ele foi desenvolvido com o objetivo de estudar como os LLMs podem apoiar a anál
 
 ## 🎯 Objetivos
 
-- 🔍 Explorar o uso de LLMs em atividades de Segurança da Informação.
-- ✍️ Desenvolver e aprimorar prompts para a análise de possíveis tentativas de phishing.
-- ⚖️ Comparar os resultados obtidos com diferentes versões de um prompt.
-- ⚠️ Identificar limitações e possíveis inconsistências nas respostas do modelo.
-- 📝 Documentar os testes e os resultados para fins de aprendizado.
+- Explorar o uso de LLMs em atividades de Segurança da Informação.
+- Desenvolver e aprimorar prompts para a análise de possíveis tentativas de phishing.
+- Comparar os resultados obtidos com diferentes versões de um prompt.
+- Identificar limitações e possíveis inconsistências nas respostas do modelo.
+- Documentar os testes e os resultados para fins de aprendizado.
 
 ---
 
@@ -100,12 +100,12 @@ O modelo pode apresentar inconsistências, interpretações incorretas ou classi
 
 Durante o desenvolvimento, foram explorados conceitos de:
 
-- 🔐 Segurança da Informação
-- 🎣 Phishing e engenharia social
-- ✍️ Engenharia de Prompt
-- 🤖 Aplicações de LLMs em cibersegurança
-- 📏 Avaliação e comparação de respostas de modelos de linguagem
-- 📝 Documentação técnica e versionamento de projetos
+- Segurança da Informação
+- Phishing e engenharia social
+- Engenharia de Prompt
+- Aplicações de LLMs em cibersegurança
+- Avaliação e comparação de respostas de modelos de linguagem
+- Documentação técnica e versionamento de projetos
 
 ---
 
