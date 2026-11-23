@@ -78,7 +78,7 @@ A mensagem informa ao destinatário que sua conta será bloqueada caso os dados 
 - Link apresentado sem a identificação de uma página específica.
 - Justificativa genérica para um suposto problema cadastral.
 
-#### 🛠️ Avaliação técnica
+#### Avaliação técnica
 
 O LLM identificou corretamente os principais indicadores de phishing, em especial a ameaça de bloqueio e o prazo curto para a atualização cadastral.
 
